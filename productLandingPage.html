@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">  
+    <link rel="stylesheet" type="text/css" href="productLandingPage.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <header id="header">
+        <nav id="nav-bar">
+            <img src="wineListLogo.png" id="header-img"/>
+            <ul>
+                <li><a class="nav-link" href="#">Features</a></li>
+                <li><a class="nav-link" href="#">How It Works</a></li>
+                <li><a class="nav-link" href="#">Pricing</a></li>
+                <li><a class="nav-link" href="#">Order Now</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <div class="form-container">
+            <form id="survey-form">
+                <div class="form-field">
+                    <label class="label-block" id="name-label" for="name">Name</label>
+                    <input class="edit-input" id="name" type="text" name="name" maxlength="32" pattern="[a-zA-Z0-9\s]+" placeholder="" required/>
+                </div>
+                <div class="form-field">
+                    <label class="label-block" id="lname-label" for="lname">Last Name</label>
+                    <input class="edit-input" id="lname" type="text" name="lname" maxlength="32" pattern="[a-zA-Z0-9\s]+" placeholder="" required/>
+                </div>
+                <div class="form-field">
+                    <label class="label-block" id="email-label" for="email">e-mail</label>
+                    <input class="edit-input" id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="" required/>
+                </div>   
+                <div class="form-field">
+                    <label class="label-block" id="tel-label" for="tel">Phone Number</label>
+                    <input class="edit-input" id="tel" type="tel" name="tel" pattern="[0-9]+" placeholder="" required/>
+                </div>    
+                <div class="form-field">    
+                    <label id="select-label" for="dropdown">Country</label>
+                    <select class="edit-input especial" id="dropdown" type="select" name="country" list="select-country" required>
+                        <datalist id="select-country">
+                        <option disabled selected value>Select your country</option>
+                        <option value="spain">Spain</option>
+                        <option value="france">France</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="portugal">UK</option>    
+                        <option value="italy">Italy</option>
+                        <option value="germany">Germany</option>
+                        </datalist>
+                    </select>
+                </div>  
+                <div class="form-field">  
+                    <fieldset>
+                        <legend>Choose your plan</legend>
+                        <p><label class="radio-label" for="radio1"><input id="radio1" type="radio" name="plan" value="free" checked/>Free</label></p>
+                        <p><label class="radio-label" for="radio2"><input id="radio2" type="radio" name="plan" value="advanced"/>Advanced</label></p>
+                        <p><label class="radio-label" for="radio3"><input id="radio3" type="radio" name="plan" value="pro"/>Pro</label></p>
+                    </fieldset>    
+                </div>   
+                <div class="form-field">  
+                    <fieldset>
+                        <legend>Credit Card</legend>
+                        <p><label class="radio-label" for="radio4"><input id="radio4" type="radio" name="credit-card" value="visa" />Visa</label></p>
+                        <p><label class="radio-label" for="radio5"><input id="radio5" type="radio" name="credit-card" value="master-card"/>Master Card</label></p>
+                        <p><label class="radio-label" for="radio6"><input id="radio6" type="radio" name="credit-card" value="american-express"/>American Express</label></p>
+                    </fieldset>    
+                </div> 
+                <div class="form-field">
+                    <label class="label-block" id="card-label" for="card">Credit Card Number</label>
+                    <input class="edit-input" id="card" type="password" name="card-number" pattern="[0-9]+" placeholder="xxxx xxxx xxxx xxxx"/>
+                </div>   
+                <div class="form-field">
+                    <button class="edit-input especial" type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div id="article">
+        
+        </div>
+        <div>
+            <video id="video"></video>
+        </div>
+    </div>
+    </div>    
+        
+<script src="productLandingPage.js">
+</script>
+        
+</body>
+</html>
