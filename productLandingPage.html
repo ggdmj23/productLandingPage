@@ -18,7 +18,9 @@
     <div class="container">
         <header id="header">
             <nav id="nav-bar">
-                <img src="https://github.com/ggdmj23/productLandingPage/blob/master/wineListLogo.PNG?raw=true" id="header-img"/>
+                <picture>
+                    <img src="https://github.com/ggdmj23/productLandingPage/blob/master/wineListLogo.PNG?raw=true" id="header-img"/>
+                </picture>
                 <ul>
                     <li><a class="nav-link" href="#features">Features</a></li>
                     <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
@@ -28,37 +30,70 @@
                 </ul>
             </nav>
         </header>
-    
         <div class="article-cont">
-
             <div id="article">
                 <div id="features">
-                    <h2>Title</h2>
-                    <p>Article</p>
+                    <h2>Features</h2>
+                    <p><span class="winMini">Win</span><span class="eMini"> e-</span><span class="listMini">List<sup><small> &reg;</small></sup></span> is an on-line wine menu which offers advantages to both guests and wine professionals.</p>
+                    <h3>For your guest</h3>
+                    <ul class="features">
+                        <li>Use their own device: i.e. mobile phone</li>
+                        <li>Highly intuitive</li>
+                        <li>Filter the search</li>
+                        <li>Leave ratings and comments</li>
+                    </ul>
+                    <h3>For you, wine professional</h3>
+                    <ul>
+                        <li>Public and private versions of your wine selection</li>
+                        <li>Easy to maintain</li>
+                        <li>Database tool to control your stock</li>
+                        <li>Get feedback from guests</li>
+                    </ul>
+                </div> 
+                <div class="video">
+                    <h2 id="how-it-works">How it works</h2>
+                    <video id="video" controls>
+                        <source src="WineList.mp4" type="video/mp4">
+                        <source src="https://github.com/ggdmj23/productLandingPage/blob/master/WineList.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div id="pricing-features">
+                    <h2>Pricing</h2>
+                    <div class="flex-container" id="pricing">
+                        <div class="pricing">
+                            <h3>Free</h3>
+                            <ul class="pricing-list">
+                                <li>1 Menu</li>
+                                <li>Maximum Storage Capacity 2 GB</li>
+                                <li>3 Free Custom Templates</li>
+                            </ul>
+                            <p>0 <small><sup>€</sup>/<sub>Month</sub></small></p>
+                        </div>
+                        <div class="pricing">
+                            <h3>Advanced</h3>
+                            <ul class="pricing-list">
+                                <li>3 Menus</li>
+                                <li>Unlimited Storage Capacity</li>
+                                <li>5 Free Custom Templates</li>
+                            </ul>
+                            <p>15 <small><sup>€</sup>/<sub>Month</sub></small></p>
+                        </div>
+                        <div class="pricing">
+                            <h3>Pro</h3>
+                            <ul class="pricing-list">
+                                <li>Unlimited Menus</li>
+                                <li>Unlimited Storage Capacity</li>
+                                <li>Image Editor</li>
+                                <li>Unlimited Custom Temlates</li>
+                            </ul>
+                            <p>22 <small><sup>€</sup>/<sub>Month</sub></small></p>
+                        </div>
+                    </div> 
                 </div>    
-                <div id="how-it-works">
-                    <h2>Title</h2>
-                    <p>Article</p>
-                </div>    
-                <div id="pricing">
-                    <h2>Title</h2>
-                    <p>Article</p>
-                </div>    
-                <div id="order-now">
-                    <h2>Title</h2>
-                    <p>Article</p>
-                </div>    
-                <div id="contact">
-                    <h2>Title</h2>
-                    <p>Article</p>
-                </div>    
-            </div>
-            <div class="video">
-                <video id="video" src="WineList.mp4" width="500" controls></video>
             </div>
         </div>     
-        
-        <div class="form-container">
+        <div class="form-container" id="order-now">
             <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
                 <div class="form-field">
                     <label class="label-block" id="name-label" for="name">Name</label>
@@ -114,9 +149,44 @@
                     <input class="edit-input especial" type="submit" id="submit" value="Submit"/>
                 </div>
             </form>
+            <div class="invoice">
+                <div id="invoice">
+                    <h3>Your Purchase</h3>
+                    <h4><span class="winMiniLight">Win</span><span class="eMiniLight"> e-</span><span class="listMiniLight">List<sup><small> &reg;</small></sup></span> Version:</h4>
+                    <p id="purchase-choice"></p>
+                    <h4>Name:</h4>
+                    <p id="purchase-name"></p>
+                    <h4>Last Name:</h4>
+                    <p id="purchase-last-name"></p>
+                    <h4>Total:</h4>
+                    <p id="purchase-total"></p>
+                </div>
+            </div>  
+            <div class="contact">
+                <address id="contact">
+                    <h3>Contact</h3>
+                    <h4>e-mail:</h4>
+                    <p><a href="mailto:webmaster@example.com">win_eList@example.com</a></p>
+                    <h4>Visit us at:</h4>
+                    <p><a href="#">win-elist.com</a></p>
+                    <h4>Address:</h4>
+                    <p>Box 564, Barcelona</p>
+                    <p>Spain</p>
+                </address>
+            </div>  
         </div>
-        
-        <footer class="footer"><small>&copy; Copyright 2020 ggdmj23</small></footer>
+        <footer class="footer">
+            <nav id="nav-footer">
+                <img src="https://github.com/ggdmj23/productLandingPage/blob/master/wineListLogo.PNG?raw=true" id="footer-img"/>
+                <ul>
+                    <li><a class="nav-link" href="#"><small>&copy; Copyright 2020 ggdmj23</small></a></li>
+                    <li><a class="nav-link" href="#features">Privacy</a></li>
+                    <li><a class="nav-link" href="#how-it-works">Terms</a></li>
+                    <li><a class="nav-link" href="#pricing">Work with Us</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
     </div>    
         
 <script src="productLandingPage.js">
