@@ -62,7 +62,6 @@
                     <h2>Pricing</h2>
                     <div class="flex-container" id="pricing">
                         <div class="pricing">
-                            <p><span class="winInverted">Win</span><span class="einverted"> e-</span><span class="listInverted">List<sup><small> &reg;</small></sup></span></p>
                             <h3>Free</h3>
                             <ul class="pricing-list">
                                 <li>1 Menu</li>
@@ -72,7 +71,6 @@
                             <p>0 <small><sup>€</sup>/<sub>Month</sub></small></p>
                         </div>
                         <div class="pricing">
-                            <p><span class="winInverted">Win</span><span class="einverted"> e-</span><span class="listInverted">List<sup><small> &reg;</small></sup></span></p>
                             <h3>Advanced</h3>
                             <ul class="pricing-list">
                                 <li>3 Menus</li>
@@ -82,7 +80,6 @@
                             <p>15 <small><sup>€</sup>/<sub>Month</sub></small></p>
                         </div>
                         <div class="pricing">
-                            <p><span class="winInverted">Win</span><span class="einverted"> e-</span><span class="listInverted">List<sup><small> &reg;</small></sup></span></p>
                             <h3>Pro</h3>
                             <ul class="pricing-list">
                                 <li>Unlimited Menus</li>
@@ -97,7 +94,7 @@
             </div>
         </div>     
         <div class="form-container" id="order-now">
-            <form id="form">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
                 <div class="form-field">
                     <label class="label-block" id="name-label" for="name">Name</label>
                     <input class="edit-input" id="name" type="text" name="name" maxlength="32" pattern="[a-zA-Z0-9\s]+" placeholder="Enter your name" required/>
@@ -131,17 +128,17 @@
                 <div class="form-field">  
                     <fieldset>
                         <legend>Choose your plan</legend>
-                        <p><label class="radio-label" for="radio1"><input id="radio1" type="radio" name="plan" value="Free" checked/>Free</label></p>
-                        <p><label class="radio-label" for="radio2"><input id="radio2" type="radio" name="plan" value="Advanced"/>Advanced</label></p>
-                        <p><label class="radio-label" for="radio3"><input id="radio3" type="radio" name="plan" value="Pro"/>Pro</label></p>
+                        <p><label class="radio-label" for="radio1"><input id="radio1" type="radio" name="plan" value="free" checked/>Free</label></p>
+                        <p><label class="radio-label" for="radio2"><input id="radio2" type="radio" name="plan" value="advanced"/>Advanced</label></p>
+                        <p><label class="radio-label" for="radio3"><input id="radio3" type="radio" name="plan" value="pro"/>Pro</label></p>
                     </fieldset>    
                 </div>   
                 <div class="form-field">  
                     <fieldset>
                         <legend>Credit Card</legend>
-                        <p><label class="radio-label2" for="radio4"><input id="radio4" type="radio" name="credit-card" value="visa" />Visa</label></p>
-                        <p><label class="radio-label2" for="radio5"><input id="radio5" type="radio" name="credit-card" value="master-card"/>Master Card</label></p>
-                        <p><label class="radio-label2" for="radio6"><input id="radio6" type="radio" name="credit-card" value="american-express"/>American Express</label></p>
+                        <p><label class="radio-label" for="radio4"><input id="radio4" type="radio" name="credit-card" value="visa" />Visa</label></p>
+                        <p><label class="radio-label" for="radio5"><input id="radio5" type="radio" name="credit-card" value="master-card"/>Master Card</label></p>
+                        <p><label class="radio-label" for="radio6"><input id="radio6" type="radio" name="credit-card" value="american-express"/>American Express</label></p>
                     </fieldset>    
                 </div> 
                 <div class="form-field">
@@ -149,11 +146,7 @@
                     <input class="edit-input" id="card" type="password" name="card-number" pattern="[0-9]+" placeholder="xxxx xxxx xxxx xxxx"/>
                 </div>   
                 <div class="form-field">
-                    <input type="button" class="edit-input especial" id="cart" name="cart" value="Submit" onclick="onChange(); getPlan(); getPrice();">
-                    
-                    <!--
-                    <input class="edit-input especial" type="submit" id="submit" value="Submit" onclick="onChange;"/>
-                    -->
+                    <input class="edit-input especial" type="submit" id="submit" value="Submit"/>
                 </div>
             </form>
             <div class="invoice">
@@ -181,6 +174,25 @@
                     <p>Spain</p>
                 </address>
             </div>  
+            <div class="contact">
+                
+                <?php
+                    echo $_SERVER['PHP_SELF'];
+                    echo "<br>";
+                    echo $_SERVER['SERVER_NAME'];
+                    echo "<br>";
+                    echo $_SERVER['HTTP_HOST'];
+                    echo "<br>";
+                    echo $_SERVER['HTTP_REFERER'];
+                    echo "<br>";
+                    echo $_SERVER['HTTP_USER_AGENT'];
+                    echo "<br>";
+                    echo $_SERVER['SCRIPT_NAME'];
+                ?>
+            
+            </div>
+            
+            
         </div>
         <footer class="footer">
             <nav id="nav-footer">
