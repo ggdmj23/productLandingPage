@@ -225,7 +225,7 @@ h2 {
     border-left: 2px solid slategray;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #315481;
-    color: white;
+    color: black;
 }
 
 @media screen and (max-width: 800px) {
@@ -251,7 +251,7 @@ h2 {
 }
 
 .e-Inverted {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Orbitron', sans-serif, Verdana, sans-serif;
     margin-left: -5px;
     color: black;
