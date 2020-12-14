@@ -97,7 +97,7 @@
             </div>
         </div>     
         <div class="form-container" id="order-now">
-            <form id="form" method="POST" action="http://localhost/productLanding/test_ProductLanding.php">
+            <form id="form" method="POST" action="http://localhost/productLanding/test_ProductLanding.php" target="_blank">
                 <div class="form-field">
                     <label class="label-block" id="name-label" for="name">Name</label>
                     <input class="edit-input" id="name" type="text" name="name" maxlength="32" pattern="[A-Za-z ]{1,32}" placeholder="Enter your name" required/>
@@ -159,7 +159,7 @@
                 </div>   
                 <div class="form-field">
                     <input type="button" class="edit-input especial" id="cart" name="cart" value="Total" onclick="onChange(); getPlan(); getPrice();">
-                    <input class="edit-input especial" type="submit" id="submit" value="Submit"/>
+                    
                 </div>
             </form>
             <div class="invoice">
@@ -173,7 +173,10 @@
                     <p id="purchase-last-name"></p>
                     <h4>Total:</h4>
                     <p id="purchase-total"></p>
+                    
+                    <input form="form" class="edit-input especial" type="submit" id="submit" value="Submit"/>
                 </div>
+                
             </div>  
             <div class="contact">
                 <address id="contact">
